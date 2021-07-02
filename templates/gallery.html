@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<!--
+Template Name: Art for Covid Relief
+Author: <a href="https://www.os-templates.com/">OS Templates</a>
+Author URI: https://www.os-templates.com/
+Copyright: OS-Templates.com
+Licence: Free to use under our free template licence terms
+Licence URI: https://www.os-templates.com/template-terms
+-->
+<html lang="">
+<!-- To declare your language - read more here: https://www.w3.org/International/questions/qa-html-language-declarations -->
+<head>
+    <title>Art for Covid Relief | Gallery</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link href="/static/layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="/static/layout/styles/gallery.css" rel="stylesheet" type="text/css" media="all">
+    <script src="/static/layout/scripts/jquery.min.js"></script>
+    <script>
+        $("#loader").css("top", ((window.innerHeight / 2) - 25).toString() + "px");
+        $("#loader").css("left", ((window.innerWidth / 2) - 25).toString() + "px");
+    </script>
+</head>
+<body id="top" class="blur">
+    <div id="loader"></div>
+
+    <div id="buyform">
+
+        <img id="x" src="\static\images\cross.jpg" onclick="closeForm()">
+        <br />
+        <label for="fullname" class="formElements"><b>Name</b></label>
+        <input type="text" id="fullname" name="fullname" class="formElements">
+
+        <label for="email" class="formElements"><b>Email Id</b></label>
+        <input type="email" id="email" name="email" class="formElements">
+
+        <label for="phonenumber" class="formElements"><b>Contact Number</b></label>
+        <input type="number" id="phonenumber" name="phonenumber" class="formElements">
+
+        <label for="artwork" class="formElements"><b>Artwork</b></label>
+        <input type="text" readonly id="artwork" class="formElements" name="artwork">
+
+        <input type="submit" class="button formElements" value="Request Order" onclick="verifyAndBuy()">
+    </div>
+    <!-- ################################################################################################ -->
+    <!-- ################################################################################################ -->
+    <!-- ################################################################################################ -->
+    <!-- Top Background Image Wrapper -->
+    <div style="background-color:#13473c;">
+        <!-- ################################################################################################ -->
+        <div class="wrapper row1">
+            <header id="header" class="hoc clear">
+                <div id="logo" class="fl_left">
+                    <!-- ################################################################################################ -->
+                    <h1><a href="gallery">Art for Covid Relief</a></h1>
+                    <!-- ################################################################################################ -->
+                </div>
+                <!--nav id="mainav" class="fl_right">
+                    <ul class="clear">
+                        <li><a href="index">Home</a></li>
+                        <li><a href="gallery">Gallery</a></li>
+                    </ul>
+                </nav-->
+            </header>
+        </div>
+        <!-- ################################################################################################ -->
+        <!-- ################################################################################################ -->
+        <!-- ################################################################################################ -->
+        <div class="overlay">
+            <div id="breadcrumb" class="hoc clear">
+                <!-- ################################################################################################ -->
+                <h6 class="heading">Gallery</h6>
+                <p></p>
+                <!--ul>
+                    <li><a href="index">Home</a></li>
+                    <li><a href="gallery">Gallery</a></li>
+                </!--ul-->
+                <!-- ################################################################################################ -->
+            </div>
+        </div>
+        <!-- ################################################################################################ -->
+    </div>
+    <!-- End Top Background Image Wrapper -->
+    <!-- ################################################################################################ -->
+    <!-- ################################################################################################ -->
+    <!-- ################################################################################################ -->
+    <div class="wrapper row3">
+        <main class="container clear">
+            <!-- main body -->
+            <!-- ################################################################################################ -->
+            <div class="content" id="galleryContent" style="text-align: center;">
+                <!-- ################################################################################################ -->
+                <div id="gallery">
+                    <figure>
+                        <ul class="nospace clear" id="gallery_thumbnail_list">
+                        </ul>
+                    </figure>
+                </div>
+            </div>
+            <!-- ################################################################################################ -->
+            <!-- / main body -->
+            <div class="clear"></div>
+        </main>
+    </div>
+
+    <div class="wrapper coloured">
+        <section id="ctdetails" class="hoc clear">
+            <ul class="nospace clear">
+                <li class="one_half first">
+                    <div class="block clear"><a href="https://www.instagram.com/artforcovidrelief/"><i class="fa fa-instagram"></i></a> <span href="https://www.instagram.com/artforcovidrelief/"><strong>Send Us A Message:</strong> @artforcovidrelief</span></div>
+                </li>
+                <li class="one_half">
+                    <div class="block clear"><a href="mailto:username@example.com?subject=Lets%20Discuss"><i class="fas fa-envelope"></i></a> <span href="mailto:username@example.com?subject=Lets%20Discuss"><strong>Send us a mail:</strong> contactartforcovidrelief@gmail.com</span></div>
+                </li>
+            </ul>
+        </section>
+    </div>
+
+    <div class="wrapper row5">
+        <div id="copyright" class="hoc clear">
+            <p class="fl_left">Copyright &copy; 2018 - All Rights Reserved - <a href="#">artforcovidrelief.azurewebsites.net</a></p>
+            <p class="fl_right">Template by <a target="_blank" href="https://www.os-templates.com/" title="Free Website Templates">OS Templates</a></p>
+        </div>
+    </div>
+    <a id="backtotop" href="#top"><i class="fas fa-chevron-up"></i></a>
+    <!-- JAVASCRIPTS -->
+    <script src="/static/layout/scripts/jquery.backtotop.js"></script>
+    <script src="/static/layout/scripts/jquery.mobilemenu.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="/static/scripts/gallery.js"></script>
+    <script>
+        closeForm();
+        GetGalleryArtwork();
+    </script>
+</body>
+</html>

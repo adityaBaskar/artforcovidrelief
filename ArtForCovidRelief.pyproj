@@ -1,0 +1,147 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>633430ab-7104-4dc0-974f-aab6565d1c91</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <ProjectTypeGuids>{1b580a1a-fdb3-4b32-83e1-6407eb2722e6};{349c5851-65df-11da-9384-00065b846f21};{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <StartupFile>app.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <LaunchProvider>Web launcher</LaunchProvider>
+    <WebBrowserUrl>http://localhost</WebBrowserUrl>
+    <OutputPath>.</OutputPath>
+    <SuppressCollectPythonCloudServiceFiles>true</SuppressCollectPythonCloudServiceFiles>
+    <Name>ArtForCovidRelief</Name>
+    <RootNamespace>ArtForCovidRelief</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="static\" />
+    <Folder Include="templates\" />
+    <Folder Include="Properties\" />
+    <Folder Include="Properties\PublishProfiles\" />
+    <Folder Include="static\images\" />
+    <Folder Include="static\images\demo\" />
+    <Folder Include="static\images\demo\backgrounds\" />
+    <Folder Include="static\images\demo\gallery\" />
+    <Folder Include="static\layout\" />
+    <Folder Include="static\layout\scripts\" />
+    <Folder Include="static\layout\styles\" />
+    <Folder Include="static\layout\styles\fontawesome-free\" />
+    <Folder Include="static\layout\styles\fontawesome-free\css\" />
+    <Folder Include="static\layout\styles\fontawesome-free\webfonts\" />
+    <Folder Include="static\pages\" />
+    <Folder Include="static\scripts\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="app.py">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\PublishProfiles\ArtForCovidRelief - Web Deploy.pubxml" />
+    <None Include="Properties\PublishProfiles\ArtForCovidRelief - FTP.pubxml" />
+    <Content Include="static\images\cart.svg" />
+    <Content Include="static\images\cart.png" />
+    <Content Include="static\images\cross.jpg" />
+    <Content Include="static\images\Custom Order.jpeg" />
+    <Content Include="static\images\demo\avatar.png" />
+    <Content Include="static\images\demo\backgrounds\01.jpg" />
+    <Content Include="static\images\demo\backgrounds\index.html" />
+    <Content Include="static\images\demo\gallery\index.html" />
+    <Content Include="static\images\demo\index.html" />
+    <Content Include="static\images\Gallery.jpeg" />
+    <Content Include="static\images\index.html" />
+    <Content Include="static\images\left.png" />
+    <Content Include="static\images\right.png" />
+    <Content Include="static\layout\styles\gallery.css" />
+    <Content Include="templates\index.html" />
+    <Content Include="static\layout\index.html" />
+    <Content Include="static\layout\scripts\index.html" />
+    <Content Include="static\layout\scripts\jquery.backtotop.js" />
+    <Content Include="static\layout\scripts\jquery.min.js" />
+    <Content Include="static\layout\scripts\jquery.mobilemenu.js" />
+    <Content Include="static\layout\styles\fontawesome-free\css\fontawesome-all.min.css" />
+    <Content Include="static\layout\styles\fontawesome-free\css\index.html" />
+    <Content Include="static\layout\styles\fontawesome-free\index.html" />
+    <Content Include="static\layout\styles\fontawesome-free\webfonts\fa-brands-400.eot" />
+    <Content Include="static\layout\styles\fontawesome-free\webfonts\fa-brands-400.svg" />
+    <Content Include="static\layout\styles\fontawesome-free\webfonts\fa-brands-400.ttf" />
+    <Content Include="static\layout\styles\fontawesome-free\webfonts\fa-brands-400.woff" />
+    <Content Include="static\layout\styles\fontawesome-free\webfonts\fa-brands-400.woff2" />
+    <Content Include="static\layout\styles\fontawesome-free\webfonts\fa-regular-400.eot" />
+    <Content Include="static\layout\styles\fontawesome-free\webfonts\fa-regular-400.svg" />
+    <Content Include="static\layout\styles\fontawesome-free\webfonts\fa-regular-400.ttf" />
+    <Content Include="static\layout\styles\fontawesome-free\webfonts\fa-regular-400.woff" />
+    <Content Include="static\layout\styles\fontawesome-free\webfonts\fa-regular-400.woff2" />
+    <Content Include="static\layout\styles\fontawesome-free\webfonts\fa-solid-900.eot" />
+    <Content Include="static\layout\styles\fontawesome-free\webfonts\fa-solid-900.svg" />
+    <Content Include="static\layout\styles\fontawesome-free\webfonts\fa-solid-900.ttf" />
+    <Content Include="static\layout\styles\fontawesome-free\webfonts\fa-solid-900.woff" />
+    <Content Include="static\layout\styles\fontawesome-free\webfonts\fa-solid-900.woff2" />
+    <Content Include="static\layout\styles\fontawesome-free\webfonts\index.html" />
+    <Content Include="static\layout\styles\framework.css" />
+    <Content Include="static\layout\styles\index.html" />
+    <Content Include="static\layout\styles\layout.css" />
+    <Content Include="templates\licence.txt" />
+    <Content Include="static\pages\basic-grid.html" />
+    <Content Include="static\pages\font-icons.html" />
+    <Content Include="static\pages\full-width.html" />
+    <Content Include="templates\gallery.html" />
+    <Content Include="static\pages\index.html" />
+    <Content Include="static\pages\sidebar-left.html" />
+    <Content Include="static\pages\sidebar-right.html" />
+    <Content Include="static\scripts\gallery.js" />
+    <Content Include="web.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Web.targets" />
+  <!-- Specify pre- and post-build commands in the BeforeBuild and 
+       AfterBuild targets below. -->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <AutoAssignPort>True</AutoAssignPort>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
