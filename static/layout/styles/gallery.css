@@ -156,3 +156,8 @@ img.gallery-thumbnail {
     width: 5%;
     left: 95%;
 }
+
+.infobox {
+    color: #3498db;
+    text-align: center;
+}
