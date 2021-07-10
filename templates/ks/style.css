@@ -1,0 +1,255 @@
+@import url("https://fonts.googleapis.com/css?family=PT+Sans");
+body,
+html {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  font-family: "PT Sans", sans-serif;
+  padding: 20px 100px;
+}
+
+.top {
+  border-bottom: 2px solid #9388ff;
+  padding: 30px 40px;
+  box-shadow: 1px 0px 5px #9388ff90;
+  margin-bottom: 20px;
+}
+
+.title {
+  font-weight: 900;
+  font-size: 2.5rem;
+  padding-bottom: 20px;
+}
+
+.title span {
+  background: linear-gradient(to top, yellow 50%, transparent 50%);
+}
+
+.intro {
+  padding: 30px 40px;
+}
+
+.intro .row {
+  margin-bottom: 50px;
+  line-height: 1.5rem;
+  color: #666;
+}
+
+.sub-head {
+  font-weight: bold;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  color: #9388ff;
+}
+
+.popup {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 2;
+  display: none;
+}
+
+.popup-blocker {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  content: " ";
+  background-color: #ffffff90;
+}
+
+.popup-content {
+  padding: 2%;
+  background-color: #fdfdfd;
+  width: 80%;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  box-shadow: 0 0 10px 0 rgba(100, 100, 100, 0.26);
+  border-bottom: solid 5px maroon;
+}
+
+.popup-img {
+  height: 100% !important;
+  margin: auto;
+}
+
+.popup-img img {
+  max-width: 100%;
+}
+
+.popup-deets {
+  height: 100%;
+  padding: 5px 5%;
+}
+
+.popup-title {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.popup-artist {
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #666;
+  line-height: 2rem;
+  padding-bottom: 20px;
+}
+
+.popup-amount {
+  padding-bottom: 50px;
+  border-bottom: 1px black solid;
+}
+
+i {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.buy {
+  padding: 10px 0;
+  font-size: 0.8rem;
+}
+
+.infobox {
+  font-style: oblique;
+  font-size: 0.7rem;
+  color: #333;
+  padding: 10px 0 0 0;
+  font-weight: bold;
+  color: maroon;
+}
+
+label {
+  padding: 1px;
+  min-width: 120px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.button {
+  background: maroon;
+  color: white;
+  border: none;
+  outline: none;
+  padding: 5px 10px;
+}
+
+.section-title {
+  font-size: 1.8rem;
+  padding: 10px 0 30px 20px;
+  font-weight: bold;
+}
+
+.section-title span {
+  background: linear-gradient(to top, yellow 50%, transparent 50%);
+}
+
+.masonry {
+  -moz-column-count: 1;
+  column-count: 1;
+  -moz-column-gap: 0;
+  column-gap: 0;
+  counter-reset: item-counter;
+}
+
+@media screen and (min-width: 400px) {
+  .masonry {
+    -moz-column-count: 2;
+    column-count: 2;
+  }
+}
+@media screen and (min-width: 600px) {
+  .masonry {
+    -moz-column-count: 3;
+    column-count: 3;
+  }
+}
+@media screen and (min-width: 800px) {
+  .masonry {
+    -moz-column-count: 4;
+    column-count: 4;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .masonry {
+    -moz-column-count: 5;
+    column-count: 5;
+  }
+}
+.item {
+  box-sizing: border-box;
+  -moz-column-break-inside: avoid;
+  break-inside: avoid;
+  padding: 10px;
+  counter-increment: item-counter;
+  cursor: pointer;
+}
+
+.item__content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  color: #360007;
+  background: currentColor;
+  box-sizing: border-box;
+  color: #720026;
+}
+
+.item__content:hover {
+  background: #9b0034;
+}
+
+.item__content:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 13px;
+  width: 2em;
+  line-height: 2em;
+  text-align: center;
+  font-weight: bold;
+  background-color: #222;
+  color: #9388ff;
+  content: counter(item-counter);
+}
+
+.item__content img {
+  width: 100%;
+}
+
+.steps {
+  padding-left: 20px;
+}
+
+.step i {
+  width: 30px;
+}
+
+.footer {
+  background: #9388ff;
+  margin-top: 50px;
+  padding: 20px 30px;
+}
+
+.footer a {
+  color: black;
+  text-decoration: underline;
+}
