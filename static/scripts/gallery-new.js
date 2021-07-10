@@ -37,7 +37,7 @@ function openPopup(index){
   titleDiv.html(gallery_art[index]["title"]);
   artistDiv.html(gallery_art[index]["artist"]);
   typeDiv.html(gallery_art[index]["type"]);
-  var amount = "Minimum donation amount: Rs. " + (gallery_art[index]["amount"] | defaultMinDonation)
+  var amount = "Minimum donation amount: Rs. " + (gallery_art[index]["amount"] || defaultMinDonation)
   if (gallery_art[index]['sold']) {
     amount = "This artwork has already been picked by another donor.";
   }
