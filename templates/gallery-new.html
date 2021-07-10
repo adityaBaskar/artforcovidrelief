@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Art for Covid Relief</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="/static/images/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/static/images//favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/static/images//favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css'>
+<link rel="stylesheet" href="/static/layout/styles/gallery-new.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="top">
+  <div class="title"><span>Art for COVID Relief</span></div>
+  <p>The Art for Covid Relief is a charitable initiative.
+    We are a group of volunteer artists who are happy to deliver artwork to you, when you donate for a cause. </p>
+</div>
+
+<div class="intro">
+  <div class="row">
+    <div class="col-md-3 sub-head">Who are we?</div>
+    <div class="col-md-9">
+      The Art for Covid Relief aims to encourage the act of donation towards NGOs working on covid relief, by bringing people the positive incentive of art. The initiative aims to nurture NGOs working towards covid relief while also celebrating art and the exchange of it. We are a vibrant, growing community of over 35 volunteering artists. We work on a wide range of custom art orders such as creative portraits as gifts, conceptual art and even interior decor pieces.
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-3 sub-head">What is this fundraiser about?</div>
+    <div class="col-md-9">
+      Join our Gallery Fundraiser supporting Trans Community Kitchen
+      Trans Community Kitchen, a kitchen run entirely by trans folks, gave out close to 60,000 food packets to the homeless, frontline workers, ambulance drivers, the disabled community, and COVID+ working class families.
+      The kitchen has served the community over the last XX months. Currently, they have been supported by contributions from loved ones and kind strangers, and are looking for support for the expenses of the kitchen.
+      <br />
+      See more of their work <a href="https://instagram.com/transcommunitykitchen">here!</a>
+    </div>
+  </div>
+</div>
+
+<div class="popup">
+  <div class="popup-blocker" onclick="hidePopup()"></div>
+  <div class="popup-content row">
+    <div class="popup-img col-md-5">
+      <img src="https://dl.airtable.com/.attachments/ade0841f94c47827141ccb8bc5129b99/74676bee/d7kOge2B72t9.jpg" class="mx-auto d-block">
+    </div>
+    <div class="popup-deets col-md-7">
+      <div class="popup-title">Jellyfishes</div>
+      <div class="popup-artist">Disha Aravind</div>
+      <div class="popup-type"><i class="fas fa-palette"></i> <span>Canvas Painting</span></div>
+      <div class="popup-dimensions"><i class="fas fa-ruler-combined"></i><span>15 x 20 in</span></div>
+      <div class="popup-location"><i class="fas fa-map-marked-alt"></i><span>Hyderabad</span></div>
+      <div class="popup-amount"><i class="fas fa-rupee-sign"></i><span>Minimum donation amount: Rs. 1000</span></div>
+      <div class="buy">
+        <div id="buyform">
+          <label for="artwork" class="formElements">
+            <p class="infobox">ⓘ Once the request is placed, our team will reachout to you.
+              <br>
+              Please allow us to confirm that the Artwork is available before making your donation.
+            </p>
+          </label>
+          <br>
+          <label for="fullname" class="formElements"><b>Name</b></label>
+          <input type="text" id="fullname" name="fullname" class="formElements">
+          <br />
+          <label for="email" class="formElements"><b>Email Id</b></label>
+          <input type="email" id="email" name="email" class="formElements">
+          <br />
+          <label for="phonenumber" class="formElements"><b>Contact Number</b></label>
+          <input type="number" id="phonenumber" name="phonenumber" class="formElements">
+          <br />
+          <label for="artwork" class="formElements"><b>Artwork</b></label>
+          <input type="text" readonly id="artwork" class="formElements" name="artwork">
+          <br />
+          <input type="submit" class="button formElements" value="Request Order" onclick="verifyAndBuy()">
+
+          <br />
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+<div class="section-title"><span>Gallery</span></div>
+<div class="masonry-container">
+  <div class="masonry" id="masonry">
+  </div>
+</div>
+<div class="section-title"><span>Steps</span></div>
+<div class="steps">
+  <div class="step"><i class="fas fa-search"></i>Browse the Gallery and pick an Artwork</div>
+  <div class="step"><i class="fas fa-cart-plus"></i>Place a Request from the Gallery</div>
+  <div class="step"><i class="fas fa-people-arrows"></i>Our team contacts you to confirm your Request</div>
+  <div class="step"><i class="fas fa-receipt"></i>You make your donation to the featured NGO and share the receipt with us </div>
+  <div class="step"><i class="fas fa-heart"></i>You receive the artwork to commemorate your donation</div>
+</div>
+
+<div class="footer">
+  <a href="https://www.instagram.com/artforcovidrelief/"><i class="fab fa-instagram"></i>@artforcovidrelief</a>
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script  src="/static/scripts/gallery-new.js"></script>
+  <script>
+    GetGalleryArtwork();
+</script>
+
+</body>
+</html>
